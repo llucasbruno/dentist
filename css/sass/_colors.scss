@@ -1,0 +1,133 @@
+// Colors of project
+
+// Brand-colors
+$primary-dark: #09AC96;
+$primary-normal: #0AC597;
+$primary-light: #0BD894;
+
+$secondary-dark: #CAE80D;
+$secondary-normal: #D4F500;
+$secondary-light: #E9EF0C;
+
+// Neutral-colors
+$black-dark: #070807;
+$black-normal: #0F0F0F;
+$black-light: #1C1C1C;
+$black-lighten: #2A2A2A;
+
+$black-darken: #090F1D;
+
+$white-dark: #E6E6E6;
+$white-normal: #F2F2F2;
+$white-light: #FFFFFF;
+
+// Gray Scale
+$gray-1: #32343C;
+$gray-2: #505159;
+$gray-3: #6C6D77;
+$gray-4: #8A8C97;
+$gray-5: #A9ABB6;
+$gray-6: #C0C2CC;
+$gray-7: #DFE0E8;
+$gray-8: #F0F1F8;
+
+
+// Auxiliary colors
+$red-normal: #eb3d3d;
+$red-dark: #d03333;
+$red-light: #f05454;
+
+$green-normal: #0BB07B;
+$green-dark: #06A06F;
+$green-light: #23C691;
+
+$yellow-normal: #ffce52;
+$yellow-dark: #d9b043;
+$yellow-light: #ffd76b;
+
+
+.color-white{
+    color: $white-normal;
+}
+
+.color-black{
+    color: $black-light;
+}
+
+.color-black-lighten{
+    color: $black-lighten;
+}
+
+.color-primary{
+    color: $primary-light;
+}
+
+.color-secondary{
+    color: $secondary-normal;
+}
+
+.color-gradient {
+    display: inline-block;
+    background: linear-gradient(90deg, #0BD894 0%, #09AC96 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+
+.color-gradient2{
+    display: inline-block;
+    background: linear-gradient(224.78deg, $primary-normal 8.12%, $primary-light 92.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-text-gradient{
+    display: inline-block;
+    background: linear-gradient(224.78deg, $primary-normal 8.12%, $primary-normal 92.21%);
+}
+
+.bg-yellow{
+    background-color: #FCE020;
+}
+
+.bg-gray-light{
+    background-color: #F7F8FC;
+}
+
+.bg-black-lighten{
+    background-color: $black-lighten;
+}
+
+.bg-black-dark{
+    background-color: $black-dark;
+}
+
+.color-gray{
+    color: $gray-4;
+}
+
+.color-red{
+    color: $red-normal;
+}
+
+.color-green{
+    color: $green-normal;
+}
+
+.color-yellow{
+    color: $yellow-normal;
+}
+
+.bg-red{
+    background-color: $red-normal;
+}
+
+.bg-green{
+    background-color: $green-normal;
+}
+
+.bg-yellow{
+    background-color: $yellow-normal;
+}
+
+

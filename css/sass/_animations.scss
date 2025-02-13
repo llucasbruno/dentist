@@ -1,0 +1,398 @@
+.logo-playpix{
+    animation: logo-playpix 3s ease forwards;
+}
+@keyframes logo-playpix{
+    0%,20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.name-playpix{
+    animation: name-playpix 3s ease forwards; 
+}
+
+@keyframes name-playpix{
+    0%{
+        stroke-dasharray: 0 100;
+        fill-opacity: 0;
+    }
+    50%{
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-dasharray: 100 0;
+        fill-opacity: 1;
+    }
+}
+
+.fig1-square1{
+    animation: fig-squares 4s ease 8.4s infinite alternate;
+}
+
+.fig1-square3{
+    animation: fig-squares 4s ease 8.6s infinite alternate;
+}
+
+.fig1-square4{
+    animation: fig-squares 4s ease 8.8s infinite alternate;
+}
+/*
+.fig1-square5{
+    //animation: fig-squares 4s ease 1s infinite alternate;
+}
+
+.fig1-square6{
+    //animation: fig-squares 4s ease 1.2s infinite alternate;
+}
+
+.fig1-square7{
+    //animation: fig-squares 4s ease 1.4s infinite alternate;
+}
+*/
+@keyframes fig-squares{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,-40px,0);
+    }
+}
+
+.fig2-playpix{
+    animation: fig-stroke 7s ease infinite alternate;
+}
+
+.fig3-playpix{
+    animation: fig-stroke 3s ease infinite alternate;
+}
+
+.fig4-playpix{
+    animation: fig-stroke 3s ease infinite alternate;
+}
+
+@keyframes fig-stroke{
+    0%,5%{
+        stroke-dasharray: 0 300;
+    }
+    90%,100%{
+        stroke-dasharray: 300 0;
+    }
+}
+
+.fita{
+    animation: fita 12s linear infinite alternate;
+}
+
+@keyframes fita{
+    0%{
+        transform: translate3d(-300px,0,0);
+    }
+    100%{
+        transform: translate3d(300px,0,0);
+    }
+}
+
+.fig6-playpix{
+    animation: fig6-playpix 4s ease infinite alternate;
+}
+
+@keyframes fig6-playpix{
+    0%{
+        stroke-dasharray: 0 400;
+        fill-opacity: 0;
+    }
+    50%{
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-dasharray: 400 0;
+        fill-opacity: 1;
+    }
+}
+
+///////////////////////////////////////////
+
+.fig5-line2{
+    animation: fig5-line 4s ease infinite alternate;
+}
+
+.fig5-line1{
+    animation: fig5-line 4s ease infinite alternate;
+}
+
+@keyframes fig5-line{
+    0%{
+        stroke-dasharray: 0 500;
+    }
+    100%{
+        stroke-dasharray: 500 0;
+    }
+}
+
+.path-line-hero{
+    animation: path-line-hero 4s ease infinite alternate;
+}
+
+@keyframes path-line-hero{
+    0%{
+        stroke-dasharray: 0 2000;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dasharray: 2000 0;
+        stroke-dashoffset: 1000;
+    }
+}
+
+.path-line-hero-mobile{
+    animation: path-line-hero-mobile 4s ease infinite alternate;
+}
+
+@keyframes path-line-hero-mobile{
+    0%{
+        stroke-dasharray: 0 1000;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dasharray: 1000 0;
+        stroke-dashoffset: 500;
+    }
+}
+
+
+.fig5-circle1{
+    animation: fig5-circle 1s ease .4s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+.fig5-circle2{
+    animation: fig5-circle 1s ease .8s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+.fig5-circle3{
+    animation: fig5-circle 1s ease 1.2s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+.fig5-circle4{
+    animation: fig5-circle 1s ease 1.6s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes fig5-circle{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.fig5-center{
+    animation: fig5-rotate 4s ease 6s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes fig5-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.lines-footer{
+    animation: lines-footer 4s ease 0s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes lines-footer{
+    0%{ 
+        transform: scaleY(1) scaleX(1);
+    }
+    100%{
+        transform: scaleY(1.2) scaleX(1.1);
+    }
+}
+
+.fig5-icon1, .fig5-icon2, .fig5-icon3, .fig5-icon4{
+    animation: rotation 4s ease 5s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes rotation{
+    0%{ 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+// ANIMATION LOGO SCREEN LOADING
+
+.logo-parreira-animated{
+    animation: logo-parreira-animated 3s ease forwards;
+}
+
+@keyframes logo-parreira-animated{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.logo-textparreira-animated{
+    opacity: 0;
+    animation: logo-textparreira-animated 4s ease forwards;
+}
+
+@keyframes logo-textparreira-animated{
+    0%,50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.rect-1{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.4s forwards;
+}
+
+.rect-2{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.2s forwards;
+}
+
+.rect-3{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.4s forwards;
+}
+
+.rect-4{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.3s forwards;
+}
+
+.rect-5{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.2s forwards;
+}
+
+.rect-6{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.5s forwards;
+}
+
+.rect-7{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.5s forwards;
+}
+
+.rect-8{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.6s forwards;
+}
+
+.rect-9{
+    height: 0;
+    animation: logo-animated 1.5s cubic-bezier(.16,.73,.49,.95) 0.3s forwards;
+}
+
+@keyframes logo-animated{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 24px;
+    }
+}
+
+
+.logo-load {
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11111;
+    background-color: $black-normal;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    animation:  turnbg 2s  2s ease forwards;
+    
+    
+
+   svg {
+        width: 150px;
+        animation: draw 3s ease forwards;
+   }
+}
+
+
+
+@keyframes draw {
+    0%,10%{
+        fill-opacity: 0;
+        stroke-dasharray: 0 100;
+    }
+    60%{
+        fill-opacity: 0;
+        stroke-dasharray: 100 0;
+    }
+    100%{
+        fill-opacity: 1;
+        stroke-dasharray: 100 0;
+    }
+}
+
+
+
+@keyframes turnbg {
+    0%{
+        background-color: $black-normal;
+    }
+
+    100% {
+        background-color: $white-normal;
+    }
+   
+}
+.das {
+    display: inline-block;
+  }
+  
+  .ds {
+    animation: girar 15s linear infinite ;
+    transform-origin: 106px 28px; /* Define o ponto de rotação no centro do círculo */
+  }
+  
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

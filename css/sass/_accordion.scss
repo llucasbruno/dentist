@@ -1,0 +1,81 @@
+
+.accordion-button{
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+
+    background-color: transparent;
+    position: relative;
+
+    padding: 16px 18px;
+    border-radius: 0px;
+    
+    //border-top: 1px solid rgba(255, 255, 255, 0.1);
+    //border-left: 1px solid rgba(255, 255, 255, 0.1);
+    //border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    transition: 0.7s ease;
+
+    //box-shadow: 0px 8px 8px rgba(0,0,0,0.02);
+
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 8px;
+
+        width: 18px;
+        height: 18px;
+
+        transition: 1s ease;
+        
+        background-image: url('../../svg/icon-plus.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        transform: rotate(0deg);
+    }
+
+    &:hover{
+        padding-left: 36px;
+
+        //box-shadow: 0px 8px 32px rgba(0,0,0,0.09);
+    } 
+}
+
+.accordion-button-active{
+    position: relative;
+
+    &::before{
+        transform: rotate(315deg);
+    }
+}
+
+.accordion-content{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease;
+
+    //border-right: 1px solid $gray-7;
+    //border-left: 1px solid $gray-7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    background-color: transparent;
+
+    //box-shadow: 0px 8px 8px rgba(0,0,0,0.02);
+    transition: .7s ease;
+
+    &:target{
+        overflow: auto;
+        max-height: 300px;
+    }
+
+}
+
