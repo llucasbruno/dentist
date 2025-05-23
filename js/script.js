@@ -80,6 +80,59 @@ sectionsWithWhiteClass.forEach(section => {
 
 
 
+//var textWrapper = document.querySelector('.letters');
+//textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-h1'>$&</span>");   
+
+
+/*--=========== GSAP SCROLLTRIGGER ============- */
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Initialize a new Lenis instance for smooth scrolling
+  /*
+  const lenis = new Lenis({
+    easing: (t) => Math.min(1, 1.001 - Math.pow(5, -100 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    duration: 2,
+    direction: 'vertical',
+    gestureDirection: 'vertical',
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    //infinite: false,
+  });
+
+  // Listen for the 'scroll' event and log the event data to the console
+
+  // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+  //lenis.on('scroll', ScrollTrigger.update);
+
+  // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+  // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 2000); // Convert time from seconds to milliseconds
+  });
+
+  // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+  gsap.ticker.lagSmoothing(0);
+*/
+
+  // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
 
 
 
@@ -333,4 +386,3 @@ ScrollTrigger.addEventListener("scrollStart", () => {
   ScrollTrigger.refresh();
 });
 */
-
