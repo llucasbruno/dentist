@@ -1,6 +1,4 @@
 
-
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.querySelector('header')
